@@ -4,14 +4,14 @@ import java.text.SimpleDateFormat
 plugins {
     base
     // the ignition module plugin: https://github.com/inductiveautomation/ignition-module-tools
-    id("io.ia.sdk.modl") version("0.1.1")
-    id("org.barfuin.gradle.taskinfo") version "1.3.0"
+    id("io.ia.sdk.modl") version("0.4.1")
+    id("org.barfuin.gradle.taskinfo") version "2.2.0"
 }
 
 var timestamp = SimpleDateFormat("yyyyMMddHH").format(Date())
 
 allprojects {
-    version = "1.0.2"
+    version = "2.0.0"
     group = "org.mustry"
 }
 
@@ -24,7 +24,7 @@ ignitionModule {
     id.set("org.mustry.mustryui")
     moduleVersion.set("${project.version}.${timestamp}")
     moduleDescription.set("A compilation of components made by Mustry Solutions.")
-    requiredIgnitionVersion.set("8.1.8")
+    requiredIgnitionVersion.set("8.3.0")
 
     freeModule.set(true)
 

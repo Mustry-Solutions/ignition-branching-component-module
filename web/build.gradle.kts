@@ -5,6 +5,12 @@ plugins {
     java
     id("com.github.node-gradle.node") version("3.2.1")
 }
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+}
 // define a variable that describes the path to the mounted gateway folder, where we want to put things eventually
 val projectOutput: String by extra("$buildDir/generated-resources/")
 

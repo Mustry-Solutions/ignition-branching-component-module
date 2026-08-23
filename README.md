@@ -5,18 +5,24 @@
 >
 > **→ [Go to mustry-perspective-component-module](https://github.com/Mustry-Solutions/mustry-perspective-component-module)** · [What changed in the move](#moving-to-mustry-perspective-component-module)
 
-# Mustry UI Module
+# Perspective Branching Component
 
 An [Ignition Perspective](https://www.inductiveautomation.com/) module providing a **Branching Component**: a horizontal tree/flow renderer for track-and-trace, routing and decision paths.
+
+The project was originally called *Mustry UI*, on the assumption it would grow into a component suite. It only ever shipped this one component, so the name has been dropped in favour of one that says what it is. The module's own identity is unchanged — see below.
 
 ![The branching component rendering a tree of coloured nodes with connecting paths](https://github.com/user-attachments/assets/41f57f43-b12e-4dfa-8aa7-db0f7995ec4e)
 
 | | |
 |---|---|
 | **Module ID** | `org.mustry.mustryui` |
+| **Module name** | Mustry UI |
+| **Artifact** | `Mustry_UI.modl` |
 | **Latest release** | [v2.0.0](https://github.com/Mustry-Solutions/ignition-branching-component-module/releases/latest) — Ignition 8.3 |
 | **Requires** | Ignition 8.3+, Java 17 |
 | **Status** | Unmaintained — see the notice above |
+
+Those three identifiers still carry the old *Mustry UI* name and are deliberately left alone: the module id is what an Ignition gateway keys an installed module on, and `Mustry_UI.modl` is the asset attached to every published release. Renaming them would only make this documentation disagree with what people have already downloaded and installed.
 
 ## Install
 
